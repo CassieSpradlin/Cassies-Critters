@@ -5,18 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cassie's Critters</title>
     <link rel="stylesheet" href="style.css">
-     
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
 </head>
 
 <body onload="showSlides(1)">
-
+    <a id="home"></a>
     <header class="main-header">
 		<h1 class="name">Cassie's Critters</h1>
 		<ul class="main-nav">
-			<li><a href="#">Home</a></li>
+			<li><a href="#home">Home</a></li>
 			<li><a href="#">Blog</a></li>
-			<li><a href="#">About Me</a></li>
+			<li><a href="#aboutMe">About Me</a></li>
 			<li><a href="#">Order Form</a></li>
 		</ul>
 	</header><!--/.main-header-->   
@@ -26,15 +26,15 @@
 
     <!-- Full-width images with number and caption text -->
     <div class="mySlideshow">
-      <img src="img/cross_stitch.jpg" alt="Dinosaur">
+      <img src="img/cross_stitch.jpg" alt="Gray Blanket">
     </div>
   
     <div class="mySlideshow">
-      <img src="img/mermaid_scales.jpg" alt="monkey">
+      <img src="img/mermaid_scales.jpg" alt="Mermaid Scales">
     </div>
   
     <div class="mySlideshow">
-      <img src="img/blue_blanket.jpg" alt="unicorn">
+      <img src="img/blue_blanket.jpg" alt="Blue Blanket">
     </div>
   
     <!-- Next and previous buttons -->
@@ -45,22 +45,40 @@
 
   <div class="row">
       <div class = "primary col">
-        <h2>Here's what I'm up to!</h2>
+        <h2>My Latest Hot Off the Hook Creation:</h2>
           <img src = "img/monkey_with_banana.jpg" alt = "Mimi the Monkey">
-        <p>Hi I'm a temporary blog post paragraph :)</p>
-        <p>Look at all the awesome crapola I can make!</p>
+        <p>This little critter was a joy to make and came from a set of safari animal patterns created by Jess Huff.</p>
+        <a href="#">Click Here for Full Blog Post</a>
       </div>
 
       <div class = "secondary col">
-        <h2>Read more of my crap!</h2>
+        <h2>See What Else I've Been Up To:</h2>
         <p>Blog post a</p>
         <p>blog post b</p>
       </div>
   </div>  
 
+  <div class = "aboutMe">
+    <a id= "aboutMe"></a>
+      <img src = "img/sweater.jpg" alt = "Sweater">
+      <h2>About Me</h2>
+        <p>Growing up, my mom taught me to crochet and I'd occassionally make a scarf here and there.  In 2018 I had
+          to have ankle surgery which gave me a lot of free time.  I decided to pick up crochetting again and was looking 
+          for a challenge.  I started small with learning new stitches for dishcloths and towels and made a few blankets
+          for Christmas that year.  After I was able to conquer those challenges, I saw the cutest little stuffed bunny
+          someone had made for Easter.  I decided to try it out and after watching many videos and some helpful hints from 
+          friends, I was able to get it completed and kept improving my skills with every critter.  I love making all 
+          sorts of crochet creations, especially for family and friends.
+        </p>
+
+  </div>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+
   <footer class="main-footer">
     <div class="footer-inner">
-        <span>&copy;2019 Cassie's Critters.</span>
+        <span>&copy;2018 Cassie's Critters</span>
+        <a href="https://www.instagram.com/cassiescritters/" target=" blank" class="fa fa-instagram"> Find Me on Instagram</a>
     </div>
 </footer>
 

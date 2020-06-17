@@ -32,6 +32,11 @@ img {
     margin: 0 auto;
 }
 
+.aboutMe img {
+    max-width: 20%;
+    margin: 0 auto;
+}
+
 ul {
     margin: 0;
     padding: 0;
@@ -125,7 +130,7 @@ body {
 }
 
 .main-header {
-    background-color: teal;
+    background-color: rgb(80, 207, 195);
     margin-bottom: 5px;
 }
 
@@ -135,6 +140,42 @@ body {
 
 }
 
+.main-footer {
+    background-color: gray;
+    color: white;
+    font-weight: bold;
+}
+
+/* Instagram */
+.fa-instagram {
+    color: white;  
+  }
+
+  h2 {
+      text-align: center;
+      font-weight: bold;
+  }
+  /* =======Button Properties======== */
+  #myBtn {
+    display: none;
+    position: fixed;
+    bottom: 30px; 
+    right: 30px; 
+    z-index: 99;
+    border: none;
+    outline: none;
+    background-color: turquoise;
+    color: white;
+    cursor: pointer;
+    padding: 5px; 
+    border-radius: 10px;
+    font-size: 18px;
+  }
+  
+  #myBtn:hover {
+    background-color: #555;
+  }
+
 
 
 /* ========= Media Queries =========== */
@@ -142,12 +183,16 @@ body {
 @media (min-width: 769px) {
     .main-header,
     .main-nav,
-    .row {
+    .row,
+    .footer-inner,
+    .aboutMe {
         display:flex;
 
     }
 
-    .main-header {
+    .main-header,
+    .footer-inner,
+    .aboutMe {
         flex-direction:column;
         align-items: center;
     }
@@ -155,12 +200,28 @@ body {
     .col{
         flex: 1;
     }
+
+    .footer-inner {
+        flex: 1;
+    }
+
+    .aboutMe img{
+        flex: 1;
+    }
 }
+
+    
 
 @media (min-width: 1025px) {
 
-    .main-header{
+    .main-header,
+    .footer-inner {
         flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .aboutMe {
+        flex-direction: column;
         justify-content: space-between;
     }
     
