@@ -5,14 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cassie's Critters</title>
     <link rel="stylesheet" href="style.css">
-    <script src = "header.js"></script>  
+     
 
 </head>
 
-<body onload="showSlides(0)">
+<body onload="showSlides(1)">
 
     <header class="main-header">
-		<h1 class="name"><a href="#">Cassie's Critters</a></h1>
+		<h1 class="name">Cassie's Critters</h1>
 		<ul class="main-nav">
 			<li><a href="#">Home</a></li>
 			<li><a href="#">Blog</a></li>
@@ -26,15 +26,15 @@
 
     <!-- Full-width images with number and caption text -->
     <div class="mySlideshow">
-      <img src="img/dino_front_view.jpg" alt="Dinosaur" style="width:100%">
+      <img src="img/cross_stitch.jpg" alt="Dinosaur">
     </div>
   
     <div class="mySlideshow">
-      <img src="img/monkey_front_view.jpg" alt="monkey" style="width:100%">
+      <img src="img/mermaid_scales.jpg" alt="monkey">
     </div>
   
     <div class="mySlideshow">
-      <img src="img/sleeping_unicorn.jpg" alt="unicorn" style="width:100%">
+      <img src="img/blue_blanket.jpg" alt="unicorn">
     </div>
   
     <!-- Next and previous buttons -->
@@ -42,13 +42,29 @@
     <a class="next" onclick="plusSlides(1)">&#10095;</a>
   </div>
   <br>
-    
+
+  <div class="row">
+      <div class = "primary col">
+        <h2>Here's what I'm up to!</h2>
+          <img src = "img/monkey_with_banana.jpg" alt = "Mimi the Monkey">
+        <p>Hi I'm a temporary blog post paragraph :)</p>
+        <p>Look at all the awesome crapola I can make!</p>
+      </div>
+
+      <div class = "secondary col">
+        <h2>Read more of my crap!</h2>
+        <p>Blog post a</p>
+        <p>blog post b</p>
+      </div>
+  </div>  
 
   <footer class="main-footer">
     <div class="footer-inner">
         <span>&copy;2019 Cassie's Critters.</span>
     </div>
 </footer>
+
+<script src = "header.js"></script> 
 
    </body>
 </html>

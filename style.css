@@ -6,38 +6,65 @@ body {
     color: #3a3a3a;
     margin:0;
 }
-.mySlideshow {display: none}
-img {vertical-align: middle;}
+.mySlideshow {
+    display: none;  
+     
+}
+
+.mySlideshow img {
+     
+    width:100%;
+    justify-content: center;
+    margin:0;
+    padding:0;  
+}
+
+img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+
+}
+
+.primary img {
+    max-width: 50%;
+    margin: 0 auto;
+}
 
 ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    font-weight: bold;
   }
 
   /* ---- Navigation ---- */
 
 .name {
-	font-size: 1.40em;
-	margin: 0;
+	font-size: 1.7em;
+    margin: 0;
+    color: white;
+    text-align: center;    
 }
 .main-nav {
-	margin-top: 5px;
+    margin-top: 5px;
 }
+
 .name a,
 .main-nav a {
 	text-align: center;
 	display: block;
-	padding: 10px 15px;
+    padding: 10px 15px;
+    
 }
 .main-nav a {
 	font-size: .95em;
-	color: #3acec2;
+	color: white;
 	text-transform: uppercase;
 }
 .main-nav a:hover {
-    color: #093a58;
-
+    color: darkblue;
 }
 
 a{
@@ -46,16 +73,20 @@ a{
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  width: 100%;
   position: relative;
-  margin: auto;
+  margin: 0;
+  max-height: 400px;
+  overflow: hidden;
+    
 }
 
 /* Next & previous buttons */
 .prev, .next {
-  cursor: pointer;
+  cursor: auto;
   position: absolute;
   top: 50%;
+  transform: translateY(-50%);
   width: auto;
   padding: 16px;
   margin-top: -22px;
@@ -69,11 +100,10 @@ a{
 
 /* Position the "next button" to the right */
 .next {
-  right: 0;
+  right:0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
   background-color: rgba(0,0,0,0.8);
 }
@@ -85,12 +115,34 @@ body {
     min-height: 100vh;
 }
 
+.row {
+    flex: 1;
+}
+
+.col{
+    padding-right: 1em;
+    padding-left: 1em;
+}
+
+.main-header {
+    background-color: teal;
+    margin-bottom: 5px;
+}
+
+.mainBlogPic {
+    max-width: 25%;
+    max-height: 25%;
+
+}
+
+
 
 /* ========= Media Queries =========== */
 
 @media (min-width: 769px) {
     .main-header,
-    .main-nav {
+    .main-nav,
+    .row {
         display:flex;
 
     }
@@ -100,6 +152,9 @@ body {
         align-items: center;
     }
 
+    .col{
+        flex: 1;
+    }
 }
 
 @media (min-width: 1025px) {
@@ -108,5 +163,8 @@ body {
         flex-direction: row;
         justify-content: space-between;
     }
-
+    
+    .primary{
+        flex: 2;
+    }
 }
