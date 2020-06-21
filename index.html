@@ -15,7 +15,7 @@
 		<h1 class="name">Cassie's Critters</h1>
 		<ul class="main-nav">
 			<li><a href="#home">Home</a></li>
-			<li><a href="#">Blog</a></li>
+			<li><a href="blog.html" target= " blank">Blog</a></li>
 			<li><a href="#aboutMe">About Me</a></li>
 			<li><a href="#">Order Form</a></li>
 		</ul>
@@ -25,16 +25,13 @@
 <div class="slideshow-container">
 
     <!-- Full-width images with number and caption text -->
-    <div class="mySlideshow">
-      <img src="img/cross_stitch.jpg" alt="Gray Blanket">
+    <div class="mySlideshow" style = "background-image: url(img/llamacorn.jpg)">
     </div>
   
-    <div class="mySlideshow">
-      <img src="img/mermaid_scales.jpg" alt="Mermaid Scales">
+    <div class="mySlideshow" style = "background-image: url(img/mermaid_scales.jpg)">
     </div>
   
-    <div class="mySlideshow">
-      <img src="img/blue_blanket.jpg" alt="Blue Blanket">
+    <div class="mySlideshow" style = "background-image: url(img/blue_blanket.jpg)">
     </div>
   
     <!-- Next and previous buttons -->
@@ -45,23 +42,47 @@
 
   <div class="row">
       <div class = "primary col">
-        <h2>My Latest Hot Off the Hook Creation:</h2>
+        <h2 class = "mainProject">My Latest Hot Off the Hook Creation:</h2>
           <img src = "img/monkey_with_banana.jpg" alt = "Mimi the Monkey">
-        <p>This little critter was a joy to make and came from a set of safari animal patterns created by Jess Huff.</p>
-        <a href="#">Click Here for Full Blog Post</a>
+        <p>A friend reached out to me looking for another critter to add to her daughter's collection and had found 
+          this adorable Mimi the Monkey pattern by Jess Huff.  After selecting the colors, I got to work bringing this 
+          piece of her safari collection to life with a few extra accessories!
+          <a href="blog.html" target = " blank" class = "currentProject">Click Here for Full Blog Post</a>
+        </p>
+        
       </div>
 
       <div class = "secondary col">
-        <h2>See What Else I've Been Up To:</h2>
-        <p>Blog post a</p>
-        <p>blog post b</p>
+          <h2 class = "mainProject">See What Else I've Been Up To:</h2>
+          <div class = "addtlBlogs">
+            <img src = "img/mermaid_scales.jpg" class = "otherBlogPics"alt = "Mermaid">
+            <p>Just in time for trips to the beach, a cute mermaid to join in on the adventure!
+               <a href="#" target = " blank" class = "whatsNew">Click Here for More</a>
+            </p>
+          </div>
+          <div class = "addtlBlogs">
+            <img src = "img/dino_front_view.jpg" class = "otherBlogPics"alt = "Dinosaur">
+            <p>Watch out Jurassic Park, new dinos coming your way!
+              <a href="#" target = " blank" class = "whatsNew">Click Here for More</a>
+            </p>
+          </div>
+
+          <div class = "addtlBlogs">
+            <img src = "img/sleeping_unicorn.jpg" class = "otherBlogPics"alt = "Sleeping Unicorn">
+            <p>A tiny, sleeping unicorn perfect for any unicorn lover!
+              <a href="#" target = " blank" class = "whatsNew">Click Here for More</a>
+            </p>
+          </div>
+
       </div>
+
   </div>  
 
-  <div class = "aboutMe">
+  <div class = "aboutMe col">
     <a id= "aboutMe"></a>
       <img src = "img/sweater.jpg" alt = "Sweater">
-      <h2>About Me</h2>
+      <div class="aboutmeSummary">
+        <h2>About Me</h2>
         <p>Growing up, my mom taught me to crochet and I'd occassionally make a scarf here and there.  In 2018 I had
           to have ankle surgery which gave me a lot of free time.  I decided to pick up crochetting again and was looking 
           for a challenge.  I started small with learning new stitches for dishcloths and towels and made a few blankets
@@ -70,6 +91,7 @@
           friends, I was able to get it completed and kept improving my skills with every critter.  I love making all 
           sorts of crochet creations, especially for family and friends.
         </p>
+        </div>
 
   </div>
 

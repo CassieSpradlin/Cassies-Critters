@@ -7,17 +7,14 @@ body {
     margin:0;
 }
 .mySlideshow {
-    display: none;  
+    display: none; 
+    height: 350px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover; 
      
 }
 
-.mySlideshow img {
-     
-    width:100%;
-    justify-content: center;
-    margin:0;
-    padding:0;  
-}
 
 img {
     display: block;
@@ -35,7 +32,10 @@ img {
 .aboutMe img {
     max-width: 20%;
     margin: 0 auto;
+    border-radius: 15px;
+    padding-bottom: 15px;
 }
+
 
 ul {
     margin: 0;
@@ -69,7 +69,7 @@ ul {
 	text-transform: uppercase;
 }
 .main-nav a:hover {
-    color: darkblue;
+    color: rgb(228, 87, 185);
 }
 
 a{
@@ -81,7 +81,7 @@ a{
   width: 100%;
   position: relative;
   margin: 0;
-  max-height: 400px;
+  max-height: 350px;
   overflow: hidden;
     
 }
@@ -124,6 +124,7 @@ body {
     flex: 1;
 }
 
+
 .col{
     padding-right: 1em;
     padding-left: 1em;
@@ -146,20 +147,59 @@ body {
     font-weight: bold;
 }
 
+.primary {
+    margin: 15px;
+
+}
+
+.otherBlogPics {
+    max-height: 100px;
+    max-width: 100px;
+    padding-right: 15px;
+}
+
+
 /* Instagram */
 .fa-instagram {
     color: white;  
+    display: block;
   }
 
   h2 {
+      display: inline;
       text-align: center;
       font-weight: bold;
   }
+
+  .aboutmeSummary {
+      padding-left: 15px;
+  }
+
+  .currentProject {
+      color: darkblue;
+      font-style: italic;
+  }
+
+  .mainProject {
+      display: block;
+      font-size: 2em;
+  }
+
+.addtlBlogs {
+    display: flex;
+    margin: 25px;
+}
+
+:root {
+    background-color: rgb(243, 206, 223);
+
+}
+ 
   /* =======Button Properties======== */
   #myBtn {
     display: none;
     position: fixed;
-    bottom: 30px; 
+    bottom: 50px; 
     right: 30px; 
     z-index: 99;
     border: none;
@@ -176,38 +216,46 @@ body {
     background-color: #555;
   }
 
-
+  
 
 /* ========= Media Queries =========== */
+.footer-inner {
+    display:flex;
+    flex-direction:column;
+    align-items: center;
+    flex: 1;
+    margin: 10px 10px;
+    }
+
 
 @media (min-width: 769px) {
     .main-header,
     .main-nav,
     .row,
-    .footer-inner,
-    .aboutMe {
+    .aboutMe,
+    .addtlBlogs {
         display:flex;
 
     }
 
     .main-header,
-    .footer-inner,
-    .aboutMe {
+    .aboutMe,
+    .secondary.
+    .addtlBlogs {
         flex-direction:column;
         align-items: center;
     }
 
+   
     .col{
-        flex: 1;
-    }
-
-    .footer-inner {
         flex: 1;
     }
 
     .aboutMe img{
         flex: 1;
     }
+
+  
 }
 
     
@@ -215,17 +263,16 @@ body {
 @media (min-width: 1025px) {
 
     .main-header,
-    .footer-inner {
+    .aboutMe,
+    .addtlBlogs {
         flex-direction: row;
         justify-content: space-between;
     }
 
-    .aboutMe {
-        flex-direction: column;
-        justify-content: space-between;
-    }
     
     .primary{
         flex: 2;
     }
+
+    
 }
