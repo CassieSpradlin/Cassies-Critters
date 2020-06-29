@@ -15,7 +15,6 @@ body {
      
 }
 
-
 img {
     display: block;
     width: 100%;
@@ -36,13 +35,23 @@ img {
     padding-bottom: 15px;
 }
 
-
 ul {
     margin: 0;
     padding: 0;
     list-style: none;
     font-weight: bold;
   }
+
+/* ---- Blog Styles ---- */
+
+.mainBlogPics img {
+    width: 100%;
+    height: auto;
+}
+
+.mainBlogPics {
+    text-align: center;
+}
 
   /* ---- Navigation ---- */
 
@@ -103,7 +112,6 @@ a{
   
 }
 
-/* Position the "next button" to the right */
 .next {
   right:0;
   border-radius: 3px 0 0 3px;
@@ -118,6 +126,11 @@ body {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
+}
+
+:root {
+    background-color: rgb(243, 206, 223);
+
 }
 
 .row {
@@ -147,6 +160,12 @@ body {
     font-weight: bold;
 }
 
+/* Instagram Link */
+.fa-instagram {
+    color: white;  
+    display: block;
+  }
+
 .primary {
     margin: 15px;
 
@@ -158,13 +177,6 @@ body {
     padding-right: 15px;
 }
 
-
-/* Instagram */
-.fa-instagram {
-    color: white;  
-    display: block;
-  }
-
   h2 {
       display: inline;
       text-align: center;
@@ -173,7 +185,9 @@ body {
 
   .aboutmeSummary {
       padding-left: 15px;
+      padding-top: 70px;
   }
+
 
   .currentProject {
       color: darkblue;
@@ -190,12 +204,9 @@ body {
     margin: 25px;
 }
 
-:root {
-    background-color: rgb(243, 206, 223);
 
-}
  
-  /* =======Button Properties======== */
+  /* ==== To Top Button Properties ==== */
   #myBtn {
     display: none;
     position: fixed;
@@ -216,7 +227,50 @@ body {
     background-color: #555;
   }
 
-  
+/* ========= Inquiry Form Styling =========== */
+ 
+form {
+    max-width: 400px;
+    margin: 10px auto;
+    padding: 10px 20px;
+    background: rgb(243, 206, 223);
+    border-radius: 7px;
+}
+
+h1 {
+    margin: 0 0 30px 0;
+    text-align: center;
+  }
+
+#inquiry_text {
+    margin: 0 auto 30px auto;
+    text-align: center;
+    max-width: 400px;
+}
+
+#request {
+    padding: 90px;
+}
+
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  background: rgba(255,255,255,0.1);
+  border: none;
+  font-size: 16px;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding: 15px;
+  width: 100%;
+  background-color: #e8eeef;
+  color: #8a97a0;
+  box-shadow: 0 1px 0 rgba(0,0,0,0.03) inset;
+  margin-bottom: 30px;
+}
+
+
 
 /* ========= Media Queries =========== */
 .footer-inner {
