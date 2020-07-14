@@ -40,6 +40,7 @@
   </div>
   <br>
 
+ 
   <h1>Request A Quote For A Custom Piece Today</h1>
 
     <p id = "inquiry_text">In the fields below, please complete your information to request a quote for your custom critter.
@@ -47,7 +48,9 @@
         type of item, any colors you would like to be used, quantity and a size, if ordering any clothing items.
     </p>
 
-        <form action = "inquiry_form.html" method = "POST">
+     <!-- <img id = "image" class = "hidden" src = "img/cross_stitch.jpg"> -->
+
+        <form id = "form_toggle" action = "inquiry_form.html" method = "POST">
             <label for = "first_name">First Name:</label>
             <input type = "text" id = "first_name" name = "first_name">
 
@@ -55,10 +58,13 @@
             <input type = "text" id = "last_name" name = "last_name">
 
             <label for = "email">Email Address:</label>
-            <input type = "email" id = "email" name = "email">
+            <input type = "email" id = "email" name = "email" required pattern = ".+@+.+.com">
 
             <label for = "request">What Can I Make For You?</label>
-            <input type = "text" id = "request" name = "request">
+            <textarea rows = "8" columns = "30" wrap = "hard" id = "request"></textarea>
+
+            <input type = "submit" class = "submit_button" id = "button">
+
         </form>
 
 

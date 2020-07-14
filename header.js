@@ -57,3 +57,16 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+// Display thank you message after quote form submitted
+
+
+// var button = document.getElementById('button');
+// button.addEventListener('click', function (event){
+//   event.preventDefault();
+//   var image = document.getElementById('image');
+//   var form = document.getElementById('form_toggle');
+//   image.classList.toggle('hidden');
+//   form.classList.toggle('hidden');
+//   console.log (image);
+// });
