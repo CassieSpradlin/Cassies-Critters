@@ -23,20 +23,6 @@ function showSlides(n) {
  
 }
 
-// var slideIndex = 0;
-// showSlides();
-
-// function showSlides() {
-//   var i;
-//   var slides = document.getElementsByClassName("mySlideshow");
-//   for (i = 0; i < slides.length; i++) {
-//     slides[i].style.display = "none";
-//   }
-//   slideIndex++;
-//   if (slideIndex > slides.length) {slideIndex = 1}
-//   slides[slideIndex-1].style.display = "block";
-//   setInterval(showSlides, 3000); // Change image every 2 seconds
-// }
 
 //Get the button:
 mybutton = document.getElementById("myBtn");
@@ -58,15 +44,16 @@ function topFunction() {
   document.documentElement.scrollTop = 0;
 }
 
-// Display thank you message after quote form submitted
-
-
-// var button = document.getElementById('button');
-// button.addEventListener('click', function (event){
-//   event.preventDefault();
-//   var image = document.getElementById('image');
-//   var form = document.getElementById('form_toggle');
-//   image.classList.toggle('hidden');
-//   form.classList.toggle('hidden');
-//   console.log (image);
-// });
+// Gets name variable to pass to thanks_for_order form
+var getformValues = function (url) {
+	var params = {};
+	var parser = document.createElement('a');
+	parser.href = url;
+	var query = parser.search.substring(1);
+	var vars = query.split('&');
+	for (var i = 0; i < vars.length; i++) {
+		var pair = vars[i].split('=');
+		params[pair[0]] = decodeURIComponent(pair[1]);
+	}
+	return params;
+};

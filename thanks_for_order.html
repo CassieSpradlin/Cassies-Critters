@@ -6,8 +6,7 @@
     <title>Cassie's Critters</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
-</head>
+    </head>
 
 <body onload="showSlides(1)">
     <a id="home"></a>
@@ -19,8 +18,8 @@
 			<li><a href="index.html#aboutMe">About Me</a></li>
 			<li><a href="inquiry_form.html">Order Form</a></li>
 		</ul>
-	</header><!--/.main-header-->   
-    
+    </header><!--/.main-header-->   
+        
  <!-- Slideshow container -->
 <div class="slideshow-container">
 
@@ -41,39 +40,18 @@
   <br>
 
  
-  <h1>Request A Quote For A Custom Piece Today</h1>
+  <h1>Thank you for your order, <span id = "user_firstName"></span>!</h1>
 
-    <p id = "inquiry_text">In the fields below, please complete your information to request a quote for your custom critter.
-        I will respond within 48 hours via email to let you know the price of your item.  Please include
-        type of item, any colors you would like to be used, quantity and a size, if ordering any clothing items.
+    <p id = "inquiry_text">  Thank you for your interest in a custom critter!
+        I will respond within 48 hours via email to let you know the price of your item and a time estimate
+        of when I will be able to complete your order.  Please note that times are subject to availability and 
+        current workload.
     </p>
 
-
-        <form id = "form_toggle" action = "thanks_for_order.html" method = "GET">
-            <label for = "first_name">First Name:</label>
-            <input type = "text" id = "first_name" name = "first_name">
-
-            <label for = "last_name">Last Name:</label>
-            <input type = "text" id = "last_name" name = "last_name">
-
-            <label for = "email">Email Address:</label>
-            <input type = "email" id = "email" name = "email" required pattern = ".+@+.+.com">
-
-            <label for = "request">What Can I Make For You?</label>
-            <textarea rows = "8" columns = "30" wrap = "hard" id = "request"></textarea>
-
-            <input type = "submit" class = "submit_button" id = "button">
-            
-        </form>
-
-
-
-
-
-
-
-
-
+    <div class = "thankyou_info">
+     <img src = "img/otter.jpg" alt = "Otter with blue and white shirt">
+    </div>
+    
   <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
 
   <footer class="main-footer">
@@ -84,6 +62,11 @@
 </footer>
 
 <script src = "header.js"></script> 
+<script>
+    query_string = getformValues(window.location.href);
+    console.log (query_string.first_name);
+    document.getElementById("user_firstName").innerHTML = query_string.first_name;
+</script>
 
    </body>
 </html>
