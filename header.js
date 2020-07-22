@@ -27,7 +27,7 @@ function showSlides(n) {
 //Get the button:
 mybutton = document.getElementById("myBtn");
 
-// show button after user scrolls down page
+//show button after user scrolls down page
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {

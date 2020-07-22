@@ -135,7 +135,7 @@ body {
 }
 
 .row {
-    flex: 1;
+    flex: 1 0 auto;
 }
 
 
@@ -161,6 +161,15 @@ body {
     font-weight: bold;
 }
 
+.main-footer, 
+.main-header {
+    flex-shrink: 0;
+}
+
+.content {
+    flex-grow: 1;
+}
+
 /* Instagram Link */
 .fa-instagram {
     color: white;  
@@ -176,6 +185,7 @@ body {
     max-height: 100px;
     max-width: 100px;
     padding-right: 15px;
+    flex-shrink: 0;
 }
 
   h2 {
@@ -295,8 +305,9 @@ select {
     display:flex;
     flex-direction:column;
     align-items: center;
-    flex: 1;
+    flex: 1 0 auto;
     margin: 10px 10px;
+    
     }
 
 
@@ -307,6 +318,7 @@ select {
     .aboutMe,
     .addtlBlogs {
         display:flex;
+        
 
     }
 
@@ -324,7 +336,7 @@ select {
     }
 
     .aboutMe img{
-        flex: 1;
+        flex: 1 0 auto;
     }
 
   
