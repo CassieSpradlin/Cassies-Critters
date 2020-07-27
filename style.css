@@ -8,7 +8,7 @@ body {
 }
 .mySlideshow {
     display: none; 
-      
+          
 }
 
 .mySlideshow img {
@@ -35,7 +35,6 @@ img {
     max-width: 20%;
     margin: 0 auto;
     border-radius: 15px;
-    padding-bottom: 15px;
 }
 
 ul {
@@ -96,7 +95,7 @@ a{
   margin: 0;
   overflow: hidden;
   background-color: #81796e;
-  
+  border-bottom: 5px solid hotpink; 
     
 }
 
@@ -150,7 +149,7 @@ body {
 
 .main-header {
     background-color: rgb(80, 207, 195);
-    margin-bottom: 5px;
+    border-bottom: 5px solid hotpink;
 }
 
 .mainBlogPic {
@@ -163,6 +162,8 @@ body {
     background-color: gray;
     color: white;
     font-weight: bold;
+    margin-top: 15px;
+    border-top: 5px solid hotpink;
 }
 
 .main-footer, 
@@ -231,16 +232,18 @@ body {
     border: none;
     outline: none;
     background-color: turquoise;
-    color: white;
+    color: rgb(2, 95, 95);
     cursor: pointer;
-    padding: 5px; 
+    padding: 10px 22px; 
     border-radius: 10px;
     font-size: 18px;
-    border: 1px solid gray
+    border: 1px solid rgb(196, 193, 193);
+    line-height: 1;
+    transition: 250ms background-color ease-in-out;
   }
   
   #myBtn:hover {
-    background-color: #555;
+    background-color: rgb(4, 168, 152);
   }
 
 /* ========= Inquiry Form Styling =========== */
@@ -295,11 +298,22 @@ select {
 }
 
 .submit_button {
-    background-color: rgb(206, 198, 198);
-    font-family: 'Varela Round', sans-serif;
-    border-radius: 4px;
-    padding: 5px;
+    border: none;
+    outline: none;
+    background-color: turquoise;
+    color: rgb(2, 95, 95);
+    cursor: pointer;
+    padding: 10px 22px; 
+    border-radius: 10px;
+    font-size: 18px;
+    border: 1px solid rgb(196, 193, 193);
+    line-height: 1;
+    transition: 250ms background-color ease-in-out;
 }
+
+.submit_button:hover {
+    background-color: rgb(4, 168, 152);
+  }
 
 
 /* ========= Media Queries =========== */
@@ -346,7 +360,6 @@ select {
     .aboutMe img {
         max-width: 50%;
         margin: 0 auto;
-        padding-bottom: 0px;
     }
 
     .aboutmeSummary {
