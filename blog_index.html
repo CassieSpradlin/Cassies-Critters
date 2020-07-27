@@ -25,18 +25,22 @@
 <div class="slideshow-container">
 
     <!-- Full-width images with number and caption text -->
-    <div class="mySlideshow" style = "background-image: url(img/mittens.jpg)">
+    
+    <div class="mySlideshow">
+      <img src = "img/mittens.jpg" alt = "Blue Mittens">
     </div>
   
-    <div class="mySlideshow" style = "background-image: url(img/raccoon.jpg)">
+    <div class="mySlideshow">
+      <img src = "img/raccoon.jpg" alt = "Raccoon">
     </div>
   
-    <div class="mySlideshow" style = "background-image: url(img/llamacorn.jpg)">
+    <div class="mySlideshow">
+      <img src = "img/llamacorn.jpg" alt = "LLamacorn">
     </div>
   
     <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <a class="prev" id = "prevbtn">&#10094;</a>
+    <a class="next" id = "nextbtn">&#10095;</a>
   </div>
   <br>
 
@@ -81,7 +85,7 @@
   
   </div>
 
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+  <button id="myBtn" title="Go to top">Top</button>
 
   <footer class="main-footer">
     <div class="footer-inner">

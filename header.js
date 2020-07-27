@@ -10,7 +10,6 @@ function currentSlide(n) {
 }
 
 function showSlides(n) {
-  console.log(n);
   var i;
   var slides = document.getElementsByClassName("mySlideshow");
   if (n > slides.length) {slideIndex = 1}    
@@ -22,6 +21,18 @@ function showSlides(n) {
   slides[slideIndex-1].style.display = "block";  
  
 }
+
+nextbtn = document.getElementById ("nextbtn");
+prevbtn = document.getElementById("prevbtn");
+
+nextbtn.addEventListener('click', function() {
+  plusSlides(1);
+});
+
+prevbtn.addEventListener('click', function() {
+  plusSlides(-1);
+});
+
 
 
 //Get the button:
@@ -43,6 +54,9 @@ function topFunction() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+mybutton.addEventListener('click', topFunction);
+
 
 // Gets name variable to pass to thanks_for_order form
 var getformValues = function (url) {

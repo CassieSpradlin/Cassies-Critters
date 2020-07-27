@@ -8,11 +8,14 @@ body {
 }
 .mySlideshow {
     display: none; 
-    height: 350px;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover; 
-     
+      
+}
+
+.mySlideshow img {
+    max-height: 350px;
+    width: auto;
+    margin: 0 auto;
+    box-shadow: 10px 10px 120px 15px rgba(0,0,0,0.65);
 }
 
 img {
@@ -91,8 +94,9 @@ a{
   width: 100%;
   position: relative;
   margin: 0;
-  max-height: 350px;
   overflow: hidden;
+  background-color: #81796e;
+  
     
 }
 
@@ -307,8 +311,7 @@ select {
     align-items: center;
     flex: 1 0 auto;
     margin: 10px 10px;
-    
-    }
+}
 
 
 @media (min-width: 769px) {
@@ -318,8 +321,7 @@ select {
     .aboutMe,
     .addtlBlogs {
         display:flex;
-        
-
+     
     }
 
     .main-header,
@@ -337,9 +339,27 @@ select {
 
     .aboutMe img{
         flex: 1 0 auto;
+    }    
+
+    
+}
+
+@media (max-width: 768px) {
+    .aboutMe img {
+        max-width: 50%;
+        margin: 0 auto;
+        padding-bottom: 0px;
     }
 
-  
+    .aboutmeSummary {
+        padding-top: 5px;
+    }
+
+    .aboutmetag {
+        display: block;
+        text-align: center;
+        
+    }
 }
 
     

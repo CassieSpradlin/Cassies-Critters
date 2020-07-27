@@ -25,18 +25,22 @@
 <div class="slideshow-container">
 
     <!-- Full-width images with number and caption text -->
-    <div class="mySlideshow" style = "background-image: url(img/octopus.jpg)">
+      
+    <div class="mySlideshow">
+      <img src = "img/octopus.jpg" alt = "Octopus">
     </div>
   
-    <div class="mySlideshow" style = "background-image: url(img/blanket_and_waylon.jpg)">
+    <div class="mySlideshow">
+      <img src = "img/blanket_and_waylon.jpg" alt = "Blanket and Dog">
     </div>
   
-    <div class="mySlideshow" style = "background-image: url(img/sunflower.jpg)">
+    <div class="mySlideshow">
+      <img src = "img/sunflower.jpg" alt = "Sunflower">
     </div>
-  
+    
     <!-- Next and previous buttons -->
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <a class="prev" id = "prevbtn">&#10094;</a>
+    <a class="next" id = "nextbtn">&#10095;</a>
   </div>
   <br>
 
@@ -53,23 +57,23 @@
 
         <form id = "form_toggle" action = "thanks_for_order.html" method = "GET">
             <label for = "first_name">First Name:</label>
-            <input type = "text" id = "first_name" name = "first_name">
+            <input type = "text" id = "first_name" name = "first_name" required>
 
             <label for = "last_name">Last Name:</label>
-            <input type = "text" id = "last_name" name = "last_name">
+            <input type = "text" id = "last_name" name = "last_name" required>
 
             <label for = "email">Email Address:</label>
             <input type = "email" id = "email" name = "email" required pattern = ".+@+.+.com">
 
             <label for = "request">What Can I Make For You?</label>
-            <textarea rows = "8" columns = "30" wrap = "hard" id = "request"></textarea>
+            <textarea rows = "8" columns = "30" wrap = "hard" id = "request" required></textarea>
 
             <input type = "submit" class = "submit_button" id = "button" value = "Submit">
             
         </form>
 
 
-  <button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+    <button id="myBtn" title="Go to top">Top</button>
 
 </div>
 
