@@ -300,11 +300,10 @@ select {
 
 
 .thankyou_info img {
-    max-width: 20%;
+    max-width: 30%;
     margin: 0 auto;
     border-radius: 10%;
     display: block;
-    padding-bottom: 20px;
 }
 
 .submit_button {
@@ -381,9 +380,14 @@ select {
         text-align: center;
         
     }
+
+    .thankyou_info img {
+        max-width: 50%;
+        margin: 0 auto;
+
 }
 
-    
+   
 @media (min-width: 1025px) {
 
     .main-header,
