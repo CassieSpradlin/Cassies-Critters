@@ -1,5 +1,9 @@
 
-*{box-sizing: border-box}
+*{
+    box-sizing: border-box;
+    transition: all 250ms ease-in-out;
+}
+
 body {
     font-family: 'Varela Round', sans-serif;
     line-height: 1.6;
@@ -199,6 +203,8 @@ body {
       font-weight: bold;
   }
 
+
+
   .aboutmeSummary {
       padding-left: 15px;
       padding-top: 70px;
@@ -212,7 +218,11 @@ body {
 
   .mainProject {
       display: block;
-      font-size: 2em;
+      font-size: 2.5em;
+  }
+
+  .secondary .mainProject {
+      font-size: 1.5em;
   }
 
 .addtlBlogs {
@@ -290,11 +300,10 @@ select {
 
 
 .thankyou_info img {
-    max-width: 20%;
+    max-width: 30%;
     margin: 0 auto;
     border-radius: 10%;
     display: block;
-    padding-bottom: 20px;
 }
 
 .submit_button {
@@ -376,9 +385,10 @@ select {
         max-width: 50%;
         margin: 0 auto;
     }
+
 }
 
-    
+   
 @media (min-width: 1025px) {
 
     .main-header,
